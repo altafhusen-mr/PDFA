@@ -1,0 +1,2280 @@
+<!DOCTYPE fo:root [
+<!ENTITY Oslash "&#xD8;">
+<!ENTITY oslash "&#xF8;">
+<!ENTITY uuml "&#xfc;">
+<!ENTITY Uuml "&#xdc;">
+<!ENTITY auml "&#xE4;">
+<!ENTITY Auml "&#xC4;">
+<!ENTITY ouml "&#x6f;">
+<!ENTITY Ouml "&#x4f;">
+<!ENTITY szlig "&#xdf;">
+]>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<fo:layout-master-set>
+        		<fo:simple-page-master master-name="din-first"
+			page-height="297mm" page-width="210mm"
+            margin-top="45mm" margin-bottom="27mm"
+            margin-left="0mm" margin-right="10mm"
+        >
+                        <fo:region-body
+                margin-top="53.5mm" margin-bottom="10mm"
+                                margin-left="20mm" margin-right="0mm"
+            />
+            <fo:region-before region-name="header-first"
+                extent="45mm"
+            />
+            <fo:region-after region-name="footer"
+                extent="5mm"
+            />
+            <fo:region-start region-name="falzmarken"
+                extent="20mm"
+            />
+		</fo:simple-page-master>
+        		<fo:simple-page-master master-name="din-rest"
+			page-height="297mm" page-width="210mm"
+            margin-top="45mm" margin-bottom="27mm"
+            margin-left="0mm" margin-right="10mm"
+        >
+                        <fo:region-body
+                margin-top="0mm" margin-bottom="10mm"
+                margin-left="20mm" margin-right="0mm"
+            />
+            <fo:region-after region-name="footer"
+                extent="5mm"
+            />
+            <fo:region-start region-name="falzmarken"
+                extent="20mm"
+            />		
+        </fo:simple-page-master>
+		<fo:page-sequence-master master-name="bsm">
+			<fo:repeatable-page-master-alternatives>
+                <fo:conditional-page-master-reference
+                    page-position="first" master-reference="din-rest" />
+				<fo:conditional-page-master-reference
+					page-position="rest" master-reference="din-rest" />
+			</fo:repeatable-page-master-alternatives>
+		</fo:page-sequence-master>
+	</fo:layout-master-set>
+	<fo:page-sequence master-reference="bsm" page-break-inside="auto"
+        font-family="Arial,Helvetica,sans-serif" font-size="9pt">
+        <fo:static-content flow-name="header-first">
+<fo:block-container
+    height="45mm"                    >
+    <fo:block
+                                                                >
+        <fo:table
+    width="100%"
+    border-style="none"
+    border-color="black"
+    border-width="0"
+    padding="0.0mm"
+            >
+            <fo:table-column
+    column-width="85mm"/>
+             <fo:table-column
+    column-width="20mm"/>
+             <fo:table-column
+    column-width="75mm"/>
+             <fo:table-body
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    padding="inherit"
+    background-color="inherit"
+            >
+                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                                                <fo:block-container
+    height="10mm"                    >
+                            <fo:block
+                                                                >
+    &#160;
+</fo:block>
+                        </fo:block-container>
+                        <fo:block-container
+    height="9pt"                    >
+                            <fo:block
+        font-size="8pt"                                                        >
+	                            BSM GmbH &#183;
+	                            Am Lenkwerk 9 &#183;
+	                            D-33609 Bielefeld<fo:block />
+		                    </fo:block>
+                        </fo:block-container>
+                        
+                        &#160;
+<fo:block />
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                                            </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+            display-align="after"    >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                                            </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+            </fo:table-body>
+        </fo:table>
+    </fo:block>
+</fo:block-container>
+        </fo:static-content>
+        <fo:static-content flow-name="footer">
+            <fo:block font-size="8pt">
+                Seite <fo:page-number />
+                von <fo:page-number-citation ref-id="blockOnLastPage" />
+            </fo:block>
+        </fo:static-content>
+		<fo:flow flow-name="xsl-region-body" hyphenate="true" xml:lang="de">
+ 
+            
+            
+            
+            
+            
+        
+
+<fo:block-container
+                        >
+    <fo:block-container
+    height="10mm"                    >
+        <fo:block
+        font-size="120%"                                                        >
+                        <fo:inline font-weight="bold">Kostenstellenauswertung zur Sammelabrechnung</fo:inline>
+        </fo:block>
+    </fo:block-container>
+        <fo:block
+                                            margin-bottom="9pt"                    >
+            <fo:table
+    width="100%"
+    border-style="none"
+    border-color="black"
+    border-width="0"
+    padding="0.0mm"
+            >
+                <fo:table-column
+    column-width="35mm"/>
+                <fo:table-column
+    column-width="40mm"/>
+                <fo:table-column
+    column-width="40mm"/>
+                <fo:table-column
+    />
+                <fo:table-body
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    padding="inherit"
+    background-color="inherit"
+            >
+                    <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="3pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                          <fo:block
+                                                                >
+                              <fo:inline font-weight="bold">                                  Rechnungsdatum:
+                              </fo:inline>
+                          </fo:block>
+  
+                       </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                          02.03.2020
+                       </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                          <fo:block
+                                                                >
+                              <fo:inline font-weight="bold">                                  Rechnungsnummer:
+                              </fo:inline>
+                          </fo:block>
+  
+                       </fo:block>
+</fo:block-container>
+</fo:table-cell>
+    
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                          DE20380
+                       </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="3pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                          <fo:block
+                                                                >
+                              <fo:inline font-weight="bold">                                  Kundennummer:
+                              </fo:inline>
+                          </fo:block>
+  
+                       </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                          22002                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="3pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                          <fo:block
+                                                                >
+                              <fo:inline font-weight="bold">                                  Kunde:
+                              </fo:inline>
+                          </fo:block>
+  
+                       </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                       <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Essmann Geb&#228;udetechnik GmbH, Im Weingarten 2, 32107 Bad Salzuflen
+                       </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    </fo:table-row>
+                </fo:table-body>
+            </fo:table>
+     </fo:block>
+</fo:block-container>
+<fo:block
+        font-size="8pt"                                margin-top="5pt"    margin-bottom="5pt"                    >
+    <fo:table
+    width="100%"
+    border-style="none"
+    border-color="black"
+    border-width="0"
+    padding="0.0mm"
+            >
+        <fo:table-column
+    column-width="20%"/>
+         <fo:table-column
+    column-width="10%"/>
+         <fo:table-column
+    column-width="45%"/>
+         <fo:table-column
+    />
+          <fo:table-header
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    padding="1pt"
+    background-color="inherit"
+            >
+            <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="0.2pt"
+    border-bottom="solid"    border-top="solid"            keep-with-next="always"    background-color="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="4"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                    &#160;
+                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+            </fo:table-row>
+            <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="0.2pt"
+    border-bottom="solid"    border-top="solid"            keep-with-next="always"    background-color="inherit"
+    padding="inherit"
+    padding-top="7pt"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+               <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="0pt"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="8pt">
+<fo:inline font-weight="bold">                   Kostenstelle
+               </fo:inline>
+</fo:block>
+</fo:block-container>
+</fo:table-cell>
+               <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="8pt">
+<fo:inline font-weight="bold">                   Bereich
+               </fo:inline>
+</fo:block>
+</fo:block-container>
+</fo:table-cell>
+               <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="8pt">
+<fo:inline font-weight="bold">                   Bezeichnung
+               </fo:inline>
+</fo:block>
+</fo:block-container>
+</fo:table-cell>
+               <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="8pt">
+<fo:inline font-weight="bold">                   Summe Lieferwert
+               </fo:inline>
+</fo:block>
+</fo:block-container>
+</fo:table-cell>
+            </fo:table-row>
+        </fo:table-header>
+        <fo:table-body
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    padding="1pt"
+    background-color="inherit"
+            >
+             
+	            <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="0pt"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+	                    <fo:inline font-weight="bold">02221</fo:inline>
+ 
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+                                    
+	                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            &#160;
+	                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                             825
+                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Elektronik Dist.  
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+		                     501,16 €
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		            </fo:table-row>
+		                        <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="0.2pt"
+    border-bottom="solid"                    background-color="inherit"
+    padding="inherit"
+    padding-top="7pt"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="2"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        Summe zur Kostenstelle:
+                        <fo:inline font-weight="bold">02221</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                        <fo:inline font-weight="bold">501,16 €</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+             
+	            <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="0pt"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+	                    <fo:inline font-weight="bold">02512</fo:inline>
+ 
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+                                    
+	                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            &#160;
+	                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                             750
+                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Arbeitssicherheit  
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+		                     617,94 €
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		            </fo:table-row>
+		                        <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="0.2pt"
+    border-bottom="solid"                    background-color="inherit"
+    padding="inherit"
+    padding-top="7pt"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="2"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        Summe zur Kostenstelle:
+                        <fo:inline font-weight="bold">02512</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                        <fo:inline font-weight="bold">617,94 €</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+             
+	            <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="0pt"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+	                    <fo:inline font-weight="bold">02701</fo:inline>
+ 
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+                                    
+	                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            &#160;
+	                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                             750
+                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Arbeitssicherheit  
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+		                     129,25 €
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		            </fo:table-row>
+		                        <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="0.2pt"
+    border-bottom="solid"                    background-color="inherit"
+    padding="inherit"
+    padding-top="7pt"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="2"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        Summe zur Kostenstelle:
+                        <fo:inline font-weight="bold">02701</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                        <fo:inline font-weight="bold">129,25 €</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+             
+	            <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="0pt"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+	                    <fo:inline font-weight="bold">02722</fo:inline>
+ 
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+                                    
+	                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            &#160;
+	                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                             200
+                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Werkzeuge  
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+		                     28,12 €
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		            </fo:table-row>
+		                            
+	                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            &#160;
+	                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                             450
+                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Betriebseinrichtung  
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+		                     71,90 €
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		            </fo:table-row>
+		                            
+	                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            &#160;
+	                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                             500
+                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Verpackungen  
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+		                     88,32 €
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		            </fo:table-row>
+		                        <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="0.2pt"
+    border-bottom="solid"                    background-color="inherit"
+    padding="inherit"
+    padding-top="7pt"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="2"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        Summe zur Kostenstelle:
+                        <fo:inline font-weight="bold">02722</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                        <fo:inline font-weight="bold">188,34 €</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+             
+	            <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="0pt"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+	                    <fo:inline font-weight="bold">02741</fo:inline>
+ 
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+	                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+                                    
+	                <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="3pt"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            &#160;
+	                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+	                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                             200
+                        </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                            Werkzeuge  
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+		                     40,48 €
+		                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+		            </fo:table-row>
+		                        <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="0.2pt"
+    border-bottom="solid"                    background-color="inherit"
+    padding="inherit"
+    padding-top="7pt"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        &#160;
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="2"            >
+<fo:block-container overflow="hidden">
+<fo:block     font-size="inherit">
+                        Summe zur Kostenstelle:
+                        <fo:inline font-weight="bold">02741</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                    <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                        <fo:inline font-weight="bold">40,48 €</fo:inline>
+                    </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                </fo:table-row>
+                        <fo:table-row
+    border-style="inherit" border-color="inherit"
+    border-width="inherit"
+                        background-color="inherit"
+    padding="inherit"
+    padding-top="10pt"
+    padding-bottom="5pt"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"
+    font-size="inherit"
+                    
+    >
+                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="0pt"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+    number-columns-spanned="3"            >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                    <fo:inline font-weight="bold">Endsumme:</fo:inline>
+                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+                <fo:table-cell
+        border-style="inherit" border-color="inherit"
+    border-width="inherit"
+    border-top="inherit"
+    border-left="inherit"
+    border-right="inherit"
+    border-bottom="inherit"
+    padding="inherit"
+    padding-top="inherit"
+    padding-bottom="inherit"
+    padding-left="inherit"
+    padding-right="inherit"
+    margin-top="inherit"
+    margin-bottom="inherit"
+    margin-left="inherit"
+    margin-right="inherit"    
+                >
+<fo:block-container overflow="hidden">
+<fo:block text-align="right"    font-size="inherit">
+                    <fo:inline font-weight="bold">1.477,17 €</fo:inline>
+                </fo:block>
+</fo:block-container>
+</fo:table-cell>
+            </fo:table-row>
+        </fo:table-body>
+     </fo:table>
+</fo:block>
+        
+            <fo:block id="blockOnLastPage" />
+		</fo:flow>
+	</fo:page-sequence>
+</fo:root>
