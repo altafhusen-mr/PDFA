@@ -1,4 +1,4 @@
-package com.facthacker.PDF;
+package com.pdfa.PDF;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;

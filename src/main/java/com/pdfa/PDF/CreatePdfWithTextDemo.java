@@ -1,4 +1,4 @@
-package com.facthacker.PDF;
+package com.pdfa.PDF;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
